@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recomendador de Filmes</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1> Recomendador de Filmes</h1>
+
+    <select id="genero">
+      <option value="">Escolha um gênero</option>
+      <option value="acao">Ação</option>
+      <option value="comedia">Comédia</option>
+      <option value="ficcao">Ficção Científica</option>
+      <option value="terror">Terror</option>
+      <option value="romance">Romance</option>
+    </select>
+
+    <button onclick="recomendarFilme()">
+      Recomendar Filme
+    </button>
+
+    <div class="resultado" id="resultado">
+      <img id="poster" src="" alt="Poster do filme">
+
+      <h2 id="titulo"></h2>
+
+      <p id="descricao"></p>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
